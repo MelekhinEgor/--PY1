@@ -13,3 +13,4 @@ def get_random_password(n=None) -> str:
 
 
 print(get_random_password())
+# пустая строка
