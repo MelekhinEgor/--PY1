@@ -5,8 +5,7 @@ def to_csv_file(file_name, headers, rows, delimiter=',', new_line='\n'):
     with open(file_name, 'w') as f:  # открываем файл на перезапись\запись, если нет, то создаем его
         f.write(delimiter.join(headers)+new_line)  # записываем в файл строку заголовков, с разделителями
         for row in rows:
-            f.write(delimiter.join(row) + new_line)  # записываем в файл строки данных с разделитемя
-    return None
+            f.write(delimiter.join(row) + new_line)  # записываем в файл строки данных с разделителями
 
 
 headers_list = ['longitude', 'latitude', 'housing_median_age', 'total_rooms', 'total_bedrooms', 'population', 'households', 'median_income', 'median_house_value']
